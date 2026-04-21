@@ -59,5 +59,9 @@ class LinkedList
         previous->next = Nodebaru;
     }
 
+    bool listEmpty()
+    {
+        return START == NULL;
+    }
 
 };
