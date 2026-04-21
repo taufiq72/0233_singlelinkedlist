@@ -156,6 +156,9 @@ int main()
                 cout << "\ndata dengan Nomor mahasiswa " << nim << " berhasil dihapus\n";
             }
             break;
+        case '3':
+            mhs.traverse();
+            break;
 
         }
     }
