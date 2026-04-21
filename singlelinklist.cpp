@@ -159,6 +159,29 @@ int main()
         case '3':
             mhs.traverse();
             break;
+        case '4':
+        {
+            if (mhs.listEmpty())
+            {
+                cout << "\nList Kosong\n";
+                break;
+            }
+
+            Node *previous, *current;
+            cout << "\nMasukkan No mahasiswa yang akan dicari: ";
+            cin >> nim;
+
+            if (mhs.search(nim, &previous, &current) == false)
+            {
+                cout << "\nData tidak ditemukan\n";
+            }
+            else
+            {
+                cout << "\nData ditemukan\n";
+                cout << "No mahasiswa: " << current->noMhs << endl;
+            }
+            break;
+        }
 
         }
     }
