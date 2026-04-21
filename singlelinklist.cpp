@@ -187,5 +187,7 @@ int main()
         default:
             cout << "\nPilihan salah\n";
         }
-    }
+    }while (ch != '5');
+
+    return 0;
 }
